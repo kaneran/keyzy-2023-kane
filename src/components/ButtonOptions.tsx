@@ -16,7 +16,7 @@ export default function ButtonOptions({ label, defaultOption, options }: ButtonO
                 </label>
             </div>
             <div className="md:w-1/2 md:flex justify-evenly">
-                {options.map((option) => <button className={`${option === selectedOption ? "bg-blue-700" : "bg-azure"} hover:bg-blue-700 text-white font-bold py-2 px-4 rounded p-3.5`} onClick={handleOnClick}>
+                {options.map((option) => <button className={`${option === selectedOption ? "bg-blue-700" : "bg-azure"} hover:bg-blue-700 text-parchment font-bold py-2 px-4 rounded p-3.5`} onClick={handleOnClick}>
                     {option}
                 </button>)}
             </div>

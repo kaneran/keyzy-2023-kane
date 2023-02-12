@@ -16,7 +16,7 @@ export default function DecimalInput({label, defaultText} : DecimalInputProps) {
                 </label>
             </div>
             <div className="md:w-1/8">
-                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white" id="inline-full-name" type="number" value={input} onChange={handleChange} />
+                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-parchment" id="inline-full-name" type="number" value={input} onChange={handleChange} />
             </div>
         </div>
     )

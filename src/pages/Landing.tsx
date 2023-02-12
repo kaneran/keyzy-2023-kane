@@ -23,7 +23,7 @@ export default function Landing() {
       <h1>
         Welcome to Keyzy!
       </h1>
-      <div className="flex">
+      <div className="flex m-10">
         <div className='item'>
           <h2 className='font-bold'>Inputs</h2>
           <StringInput label='URL' defaultText='...' onChange={handleChange} />
@@ -32,7 +32,9 @@ export default function Landing() {
           <Slider label='Converted rent rate' min={10} max={25} defaultValue={20} increment={5}/>
           <ButtonOptions label='Duration' defaultOption='5 years' options={['3 years', '5 years', '7 years']}/>
         </div>
-        <div className='item'>Section 2</div>
+        <div className='item'>
+        <h2 className='font-bold'>Data Retrieved</h2>
+        </div>
       </div>
     </>
   )

@@ -16,7 +16,7 @@ export default function StringInput({label, defaultText, onChange} : StringInput
                 </label>
             </div>
             <div className="md:w-1/2">
-                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white" id="inline-full-name" type="text" value={input} onChange={handleChange} />
+                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-parchment" id="inline-full-name" type="text" value={input} onChange={handleChange} />
             </div>
         </div>
     )

@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'azure': '#0E79B2',
+        'parchment': '#FBFFF1'
       },
     },
   },
