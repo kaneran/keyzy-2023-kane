@@ -1,6 +1,13 @@
 import { StringInputProps } from "@/interfaces/StringInputProps";
+import { useState } from "react";
 
 export default function StringInput({label, defaultText} : StringInputProps) {
+    const [input, setInput] = useState(defaultText)
+
+    function handleChange(e: any){
+        setInput(e.target.value);
+    }
+    
     return (
         <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/4">
@@ -9,7 +16,7 @@ export default function StringInput({label, defaultText} : StringInputProps) {
                 </label>
             </div>
             <div className="md:w-1/2">
-                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white" id="inline-full-name" type="text" value={defaultText} />
+                <input className="bg-azure appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white" id="inline-full-name" type="text" value={input} onChange={handleChange} />
             </div>
         </div>
     )

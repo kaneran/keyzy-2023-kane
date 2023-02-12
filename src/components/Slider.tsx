@@ -1,6 +1,13 @@
 import { SliderProps } from "@/interfaces/SliderProps";
+import { useState } from "react";
 
-export default function Slider({label, min, max} : SliderProps) {
+export default function Slider({label, min, max, defaultValue, increment} : SliderProps) {
+    const [value, setValue] = useState(defaultValue)
+
+    function handleInputChange(e:any){
+        setValue(e.target.value)
+    }
+
     return (
         <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/4">
@@ -13,8 +20,10 @@ export default function Slider({label, min, max} : SliderProps) {
                 <input
                 className="w-10/12"
                     type="range"
-                    min="0" max="5"
-                    step="1" />
+                    min={min} max={max}
+                    step={increment} 
+                    value={value}
+                    onInput={handleInputChange}/>
                     {`${max}%`}
             </div>
         </div>

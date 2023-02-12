@@ -1,5 +1,5 @@
 export interface ButtonOptionsProps {
     label: string;
-    default: string;
+    defaultOption: string;
     options: string[]
 }
