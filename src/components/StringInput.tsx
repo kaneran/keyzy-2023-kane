@@ -1,13 +1,13 @@
 import { StringInputProps } from "@/interfaces/StringInputProps";
 import { useState } from "react";
 
-export default function StringInput({label, defaultText} : StringInputProps) {
+export default function StringInput({label, defaultText, onChange} : StringInputProps) {
     const [input, setInput] = useState(defaultText)
 
     function handleChange(e: any){
         setInput(e.target.value);
     }
-    
+
     return (
         <div className="md:flex md:items-center mb-6">
             <div className="md:w-1/4">
