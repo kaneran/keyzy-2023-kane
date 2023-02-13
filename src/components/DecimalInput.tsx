@@ -1,4 +1,4 @@
-import { DecimalInputProps } from "@/interfaces/DecimalInutProps";
+import { DecimalInputProps } from "@/interfaces/DecimalInputProps";
 import { useState } from "react";
 
 export default function DecimalInput({label, defaultText} : DecimalInputProps) {
